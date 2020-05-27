@@ -6,5 +6,6 @@ from odoo import api, fields, models
 _logger = logging.getLogger(__name__)
 
 class AccountPaymentTerm(models.Model):
+    _name = 'account.payment.term'
     _inherit = ['account.payment.term', 'mail.thread', 'mail.activity.mixin']
 
