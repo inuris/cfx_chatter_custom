@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "CFX - Customized HR Leaves",
+    'name': "CFX - Add Chatter to Modules",
 
     'summary': """
-        CFX - Customized HR Leaves""",
+        CFX - Add Chatter to Modules""",
 
     'description': """
-        CFX - Customized HR Leaves
+        CFX - Add Chatter to Modules
     """,
 
     'author': "KhoaLam",
@@ -19,8 +19,10 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['hr', 'calendar', 'resource', 'hr_holidays'],
-
+    'depends': ['account'],
+    'data': [
+        'views/account_view_inherited.xml'
+        ],
     # always loaded
     'installable': True,
     'application': True,
