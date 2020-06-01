@@ -19,9 +19,10 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['account'],
+    'depends': ['base','account'],
     'data': [
-        'views/account_view_inherited.xml'
+        'views/account_view.xml',
+        'views/product_views.xml'
         ],
     # always loaded
     'installable': True,
