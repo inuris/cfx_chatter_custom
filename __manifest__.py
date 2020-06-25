@@ -22,7 +22,8 @@
     'depends': ['base','account'],
     'data': [
         'views/account_view.xml',
-        'views/product_views.xml'
+        'views/product_views.xml',
+        'views/uom_uom_views.xml'        
         ],
     # always loaded
     'installable': True,

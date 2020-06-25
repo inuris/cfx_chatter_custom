@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+      <record id="product_uom_form_view_inherited" model="ir.ui.view">
+        <field name="name">uom.uom.form</field>
+        <field name="model">uom.uom</field>
+        <field name="inherit_id" ref="uom.product_uom_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="after">
+              <div class="oe_chatter">                                
+                <field name="message_follower_ids" widget="mail_followers"/>
+                <field name="activity_ids" widget="mail_activity"/>
+                <field name="message_ids" widget="mail_thread"/>
+              </div>
+            </xpath>
+        </field>
+      </record>
+      <record id="product_uom_categ_form_view_inherited" model="ir.ui.view">
+          <field name="name">uom.category.form</field>
+          <field name="model">uom.category</field>
+          <field name="inherit_id" ref="uom.product_uom_categ_form_view" />
+          <field name="arch" type="xml">
+            <xpath expr="//group" position="after">
+              <div class="oe_chatter">                                
+                <field name="message_follower_ids" widget="mail_followers"/>
+                <field name="activity_ids" widget="mail_activity"/>
+                <field name="message_ids" widget="mail_thread"/>
+              </div>
+            </xpath>
+        </field>
+      </record>
+    </data>
+</odoo>

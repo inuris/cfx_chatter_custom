@@ -22,6 +22,8 @@ class Lead(models.Model):
     priority = fields.Selection(track_visibility='onchange')
     date_closed = fields.Datetime(track_visibility='onchange')
 
+    company_id = fields.Many2one(track_visibility='onchange')
+    
     stage_id = fields.Many2one(track_visibility='onchange')
     user_id = fields.Many2one(track_visibility='onchange')
     referred = fields.Char(track_visibility='onchange')
